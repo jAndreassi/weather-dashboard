@@ -1,0 +1,18 @@
+.navbar-brand {
+  font-size: 40px;
+  color: #d18d71;
+  font-weight: 900;
+  background-color: #71b5d1;
+}
+
+.container-fluid {
+  background-color: #71b5d1;
+}
+
+.navbar {
+  padding-top: 0%;
+}
+
+.card {
+  margin-left: 5%;
+}

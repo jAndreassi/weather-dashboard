@@ -9,15 +9,109 @@
     <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
 
     <!-- Add CSS Framework Link Here  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
     <!-- Load fonts here -->
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <h1>Build something beautiful.</h1>
+    <!-- header from bootstrap -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid justify-content-center">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+      </div>
+    </nav>
 
+    <!-- Search bar card from bootstrap  -->
+    <div class="row w-100 bg-dark">
+      <div class="card" style="width: 18rem">
+        <!-- <img src="..." class="card-img-top" alt="..." /> -->
+        <div class="card-body">
+          <h5 class="card-title">Weather Search Box</h5>
+          <label for="exampleDataList" class="form-label"
+            >Search for city:</label
+          >
+          <input
+            class="form-control"
+            list="datalistOptions"
+            id="exampleDataList"
+            placeholder="Type to search..." />
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit" />
+        <ul class="list-group list-group-flush" id="searches">
+          <li class="list-group-item"></li>
+        </ul>
+      </div>
+
+      <!-- card from bootstrap, will be display box for info on city searched -->
+      <div class="card" style="width: 32rem">
+        <div class="card-header" id="city"></div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon" /></li>
+          <li class="list-group-item" id="temp"></li>
+          <li class="list-group-item" id="wind"></li>
+          <li class="list-group-item" id="humidity"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row w-100 bg-primary">
+      <div class="card" style="width: 13rem">
+        <div class="card-header date-0">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon0" /></li>
+          <li class="list-group-item" id="temp0">An item</li>
+          <li class="list-group-item" id="wind0">A second item</li>
+          <li class="list-group-item" id="humidity0">A third item</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 13rem">
+        <div class="card-header date-1">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon1" /></li>
+          <li class="list-group-item" id="temp1">An item</li>
+          <li class="list-group-item" id="wind1">A second item</li>
+          <li class="list-group-item" id="humidity1">A third item</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 13rem">
+        <div class="card-header date-2">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon2" /></li>
+          <li class="list-group-item" id="temp2">An item</li>
+          <li class="list-group-item" id="wind2">A second item</li>
+          <li class="list-group-item" id="humidity2">A third item</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 13rem">
+        <div class="card-header date-3">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon3" /></li>
+          <li class="list-group-item" id="temp3">An item</li>
+          <li class="list-group-item" id="wind3">A second item</li>
+          <li class="list-group-item" id="humidity3">A third item</li>
+        </ul>
+      </div>
+      <div class="card" style="width: 13rem">
+        <div class="card-header date-4">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><img src="" id="icon4" /></li>
+          <li class="list-group-item" id="temp4">An item</li>
+          <li class="list-group-item" id="wind4">A second item</li>
+          <li class="list-group-item" id="humidity4">A third item</li>
+        </ul>
+      </div>
+    </div>
     <!-- Add additional js libraries here  -->
     <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
   </body>
 </html>
